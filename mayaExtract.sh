@@ -13,13 +13,13 @@ do
     rpm2cpio $filename|cpio -i -d
 done
 
-wget http://mirror.centos.org/centos/7.2.1511/os/x86_64/Packages/libcurl-7.29.0-25.el7.centos.x86_64.rpm
+wget http://vault.centos.org/7.2.1511/os/x86_64/Packages/libcurl-7.29.0-25.el7.centos.x86_64.rpm
 rpm2cpio libcurl-7.29.0-25.el7.centos.x86_64.rpm|cpio -i -d
 
-wget http://mirror.centos.org/centos/7.2.1511/os/x86_64/Packages/openssl-libs-1.0.1e-42.el7.9.x86_64.rpm
+wget http://vault.centos.org/7.2.1511/os/x86_64/Packages/openssl-libs-1.0.1e-42.el7.9.x86_64.rpm
 rpm2cpio openssl-libs-1.0.1e-42.el7.9.x86_64.rpm|cpio -i -d
 
-wget http://mirror.centos.org/centos/7.2.1511/os/x86_64/Packages/compat-libtiff3-3.9.4-11.el7.x86_64.rpm
+wget http://vault.centos.org/7.2.1511/os/x86_64/Packages/compat-libtiff3-3.9.4-11.el7.x86_64.rpm
 rpm2cpio compat-libtiff3-3.9.4-11.el7.x86_64.rpm|cpio -i -d
 
 cp -rl $2/usr/autodesk/maya*/* $3/
